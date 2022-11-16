@@ -1,4 +1,3 @@
-# NERDE KALDIM? : MENU DENKLEM DEBUG
 import random
 import string
 import pyperclip

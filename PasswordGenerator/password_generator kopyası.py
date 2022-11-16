@@ -12,7 +12,6 @@ def crepw():
     if len(maxes) == 6:
         spechar = 5
     pw = []
-    curr_step = 0  # current_step of password
     number_total = 0  # total numbers used in this password.
     letter_total = 0  # total letters used in this password.
     mark_total = 0  # total special characters used in this password
@@ -62,7 +61,6 @@ def crepw():
                 pw.append(this_step)
                 letter_total += 1
 
-        curr_step += 1
 
     new_pw = ' '.join([str(i) for i in pw])
     new_pw = new_pw.replace(" ", "")
@@ -154,9 +152,6 @@ while True:
     if wnc.lower() == 'y':
         pyperclip.copy(password)
     print(password)
-    kepu = str(input("type 'n' to quit.Type ANYTHING to create another password:")) #KEeP Up the app - if n, app won't create another.
+    kepu = str(input("type 'n' to quit.Type ANYTHING to create another password:")) #Keep Up the app - if n, app won't create another.
     if kepu.lower() == 'n':
         break
-
-
-
